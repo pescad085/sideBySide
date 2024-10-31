@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side By Side</title>
+    <style>
+         .container {
+            width: 100%;
+         }
+            .image-text {
+             width: 30%;
+              float: left;
+              text-align: center;
+              margin: 0 1.5%;
+
+            }         
+              .image-text img {
+                width: 120px;
+                height: 120px;
+              }
+            
+            
+              @media screen and (max-width: 600px) {
+                  .container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                  }
+                  .image-text {
+                    text-align: left;
+                  }
+
+              }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container"> 
+        <div class="image-text">
+            <img src="donut1.jpg" alt="dontut 1">
+            <p>I am a longer paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates nihil dicta, at ratione minima necessitatibus porro, vitae obcaecati incidunt asperiores ullam, illum et ex eveniet nemo accusantium quibusdam aspernatur.</p>
+        </div>
+        <div class="image-text">
+            <img src="donut2.jpg" alt="dontut 2">
+            <p> I am a longer paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates nihil dicta, at
+            ratione minima necessitatibus porro, vitae obcaecati incidunt asperiores ullam, illum et ex eveniet nemo accusantium
+            quibusdam</p>
+        </div>
+        <div class="image-text">
+            <img src="donut3.jpg" alt="dontut 3">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur itaque sint labore, libero atque odio dolor non placeat dolorem quo impedit quibusdam minima dolore nemo. Minima eaque vero illum debitis!</p>
+        </div>
+    
+    
+    
+    
+    </div>
+   
+
+</body>
+
+</html>
